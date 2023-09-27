@@ -9,5 +9,15 @@ spring:
       server-addr: 124.221.120.16:8848
       username: nacos
       password: nacos
-      namespace: public
+      namespace: public #归类管理
       ephemeral: false  # 永久实例（挂掉也不会删掉）
+
+      #group: 更细的归类分组
+      #weight: 通常需要结合安装权重的负载均衡策略，权重越高分配的流量越多
+      #网卡
+      # key部署到阿里云上面则需要
+      # 元数据 metadata: version=1 结合元数据的扩展
+      # 集群
+      # 集成其他的轮询
+#      是否开启监听
+      
